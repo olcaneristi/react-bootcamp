@@ -1,0 +1,25 @@
+.movie__title {
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  padding-bottom: 0.4rem;
+  font-weight: 300;
+  font-size: 1.1rem;
+  font-family: "Nunito", sans-serif;
+  animation: fadeRight 3s ease-in-out;
+
+  svg {
+    font-size: 1.5rem;
+    margin-right: 0.6rem;
+    color: rgb(92, 164, 185);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    transform: translateY(100rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

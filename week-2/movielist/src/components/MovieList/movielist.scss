@@ -1,0 +1,55 @@
+.movielist {
+  color: white;
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+  max-width: 700px;
+  animation: scaleUp 3s ease-in-out;
+
+  &__container {
+    padding: 1rem;
+    border-radius: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+    background-color: #203244;
+    opacity: 0.85;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__elements {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    position: relative;
+    border-radius: 5px;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    margin: 0.8rem;
+    box-shadow: 0px 0px 12px 4px rgba(255, 255, 255, 0.2);
+    animation: scale 2s infinite linear;
+    animation-direction: alternate;
+  }
+
+  &__items {
+    padding: 0.6rem;
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.01);
+  }
+}

@@ -1,0 +1,23 @@
+.movie__category {
+  align-items: center;
+  font-size: 1.2rem;
+  display: flex;
+  color: rgb(236, 210, 90);
+  padding-bottom: 1rem;
+  animation: fadeLeft 3s ease-in-out;
+
+  svg {
+    font-size: 1.4rem;
+    color: rgb(212, 97, 97);
+    margin-right: 0.6rem;
+  }
+}
+
+@keyframes fadeLeft {
+  from {
+    transform: translateX(-100rem);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

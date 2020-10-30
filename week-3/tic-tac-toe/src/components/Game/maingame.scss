@@ -1,0 +1,23 @@
+.player__winner {
+  color: rgb(212, 214, 105);
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-family: "Nunito", sans-serif;
+  margin-bottom: 0.75rem;
+  animation: fade 2s infinite linear;
+  animation-direction: alternate;
+
+  span {
+    color: rgb(52, 188, 223);
+  }
+}
+
+@keyframes fade {
+  from {
+    transform: translateX(5px);
+  }
+  to {
+    transform: translateX(-5px);
+  }
+}

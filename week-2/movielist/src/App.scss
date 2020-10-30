@@ -1,0 +1,19 @@
+.container {
+  &__text {
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto;
+    display: flex;
+    animation: fadeUp 4s ease;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

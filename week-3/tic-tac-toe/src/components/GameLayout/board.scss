@@ -1,0 +1,29 @@
+.board {
+  margin: 0 auto;
+  padding: 0.4rem;
+  align-items: center;
+  border: 5px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0px 25px 5px rgba(247, 244, 244, 0.2),
+    0 0px 25px 5px rgba(211, 137, 26, 0.2), 0 0px 25px 5px rgba(252, 1, 1, 0.2);
+  border: 1px double transparent;
+  background-image: linear-gradient(#000000, #000000),
+    radial-gradient(circle at right, #66c518, #c01f1f);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  animation: fadeIn 2s ease;
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
