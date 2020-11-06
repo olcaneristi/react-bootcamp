@@ -1,0 +1,66 @@
+.header {
+  &__wrapper {
+    background-color: #d52b1e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+
+  &__title {
+    color: #f8e47a;
+  }
+
+  &__logo {
+    padding-right: 4rem;
+    width: 70px;
+    animation: spin 3s infinite linear;
+    animation-direction: alternate-reverse;
+  }
+
+  &__button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    outline: none;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 3px;
+    border-bottom: 5px solid #d52b1e;
+    transition: all 0.3s ease;
+    padding: 1.33rem 0;
+
+    &:hover {
+      color: #ffdd23;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-bottom: 5px solid white;
+    }
+
+    &__nav {
+      color: #fff;
+      text-decoration: none;
+      padding: 1rem 1rem;
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: translateX(-10px);
+  }
+  20% {
+    transform: translateY(5px);
+  }
+  40% {
+    transform: translateX(0px);
+  }
+  60% {
+    transform: translateY(0px);
+  }
+  80% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}

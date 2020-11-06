@@ -1,0 +1,81 @@
+.itemcontrol {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &__title {
+    padding: 10px;
+    font-weight: bold;
+    color: rgb(207, 55, 55);
+    display: flex;
+    justify-content: center;
+    margin: 0 1rem;
+    span {
+      color: rgb(32, 95, 16);
+    }
+  }
+
+  &__piece {
+    margin-left: 1rem;
+    font-weight: bold;
+    color: rgb(10, 24, 48);
+    align-items: center;
+  }
+
+  &__button {
+    display: flex;
+
+    &__less {
+      background-color: #e9502a;
+      color: white;
+      transition: all 0.3s ease;
+
+      &:hover,
+      &:active {
+        background-color: #ff0000;
+        color: white;
+      }
+    }
+
+    &__more {
+      background-color: #1a8d9c;
+      color: white;
+      transition: all 0.3s ease;
+
+      &:hover,
+      &:active {
+        background-color: #1a406b;
+        color: white;
+      }
+    }
+  }
+
+  button {
+    display: block;
+    font: inherit;
+    padding: 5px;
+    margin: 0 10px;
+    width: 80px;
+    border: 1px solid rgb(163, 159, 159);
+    cursor: pointer;
+    outline: none;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    font-weight: bold;
+    svg {
+      font-size: 14px;
+      margin-right: 5px;
+      margin-bottom: 1px;
+    }
+  }
+
+  .disabled {
+    background: #daa972;
+    color: rgb(255, 255, 255);
+  }
+}

@@ -1,0 +1,35 @@
+.hamburger {
+  width: 100%;
+  margin: auto;
+  height: 350px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+  &__bread__top {
+    height: 100px;
+    width: 500px;
+    background: linear-gradient(#bc581e, #e27b36);
+    border-radius: 50% 50% 0 0;
+    box-shadow: inset -15px 0 #c15711;
+    margin: 0.5rem auto;
+    position: relative;
+  }
+
+  &__bread__bottom {
+    height: 50px;
+    width: 500px;
+    background: linear-gradient(#f08e4a, #e27b36);
+    border-radius: 0 0 30px 30px;
+    box-shadow: inset -15px 0 #c15711;
+    margin: 0.5rem auto;
+  }
+
+  &__ingredient {
+    height: 40px;
+    width: 450px;
+    margin: 4px auto;
+    border-radius: 20px;
+  }
+}

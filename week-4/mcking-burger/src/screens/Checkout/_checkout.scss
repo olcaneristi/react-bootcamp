@@ -1,0 +1,47 @@
+.checkout {
+  &__complete {
+    text-align: center;
+    margin-top: 2rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    p,
+    a {
+      font-size: 1.3rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: red;
+      padding-left: 4px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: rgb(19, 93, 136);
+      }
+    }
+
+    svg {
+      width: 60px;
+      padding-right: 1rem;
+    }
+  }
+}
+
+.checkmark {
+  stroke: green;
+  stroke-dashoffset: 745.74853515625;
+  stroke-dasharray: 745.74853515625;
+  animation: dash 2s ease-out forwards infinite;
+  stroke-width: 5;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 745.74853515625;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
