@@ -4,8 +4,11 @@ Kodluyoruz React Bootcamp esnasinda egitmenimizin hafta hafta vermis oldugu tum 
 
 ### Icerik (Her hafta guncellenecek):
 
-- Hafta 2: Film Listesi
-- Hafta 3: Tic-Tac-Toe
+- [Hafta 2: Film Listesi](https://github.com/olcaneristi/bootcamp-projects/tree/main/week-2/movielist)
+- [Hafta 3: Tic-Tac-Toe](https://github.com/olcaneristi/bootcamp-projects/tree/main/week-3/tic-tac-toe)
+- [Hafta 4: McKing Burger Siparis Sistemi](https://github.com/olcaneristi/bootcamp-projects/tree/main/week-4/mcking-burger)
+
+### Projeleri nasil calistiririm?
 
 #### Ilk olarak, hangi proje uzerinde islem yapacaksaniz o dizinde paketlerimizi yukleyelim:
 
@@ -13,7 +16,7 @@ Kodluyoruz React Bootcamp esnasinda egitmenimizin hafta hafta vermis oldugu tum 
 $ yarn install
 ```
 
-#### Ardindan istediginiz projenin dizininde terminali calistiralim:
+#### Ardindan dizinine yukleme yaptiginiz projede terminali calistiralim:
 
 ```bash
 $ yarn start
