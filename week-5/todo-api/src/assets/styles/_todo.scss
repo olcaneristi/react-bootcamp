@@ -1,0 +1,60 @@
+.todo {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(243, 217, 217);
+  border-radius: 6px;
+  padding: 5px 20px;
+  margin: 1.2rem 40px;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+
+  &__icon {
+    background: none;
+    outline: none;
+    border: none;
+    display: flex;
+    color: red;
+    padding-right: 6px;
+    padding-top: 1px;
+  }
+
+  &__message {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.4rem;
+    padding-top: 3px;
+    line-height: 1.3rem;
+  }
+
+  &__delete {
+    margin-left: auto;
+    padding: 5px;
+    display: flex;
+    text-align: center;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+      filter: drop-shadow(0 0 5px rgb(235, 127, 133));
+      animation: rotateIn 0.35s linear;
+      animation-iteration-count: 2;
+    }
+  }
+}
+
+@keyframes rotateIn {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(15deg);
+  }
+  66% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

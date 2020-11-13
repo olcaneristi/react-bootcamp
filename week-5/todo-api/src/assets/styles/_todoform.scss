@@ -1,0 +1,69 @@
+.todoform {
+  margin: 1.2rem 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__form {
+    align-items: center;
+    display: flex;
+  }
+
+  &__input {
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+    border-bottom: 1px solid #5fe9bb;
+    margin-right: 1rem;
+    width: 300px;
+    font-size: 1.3rem;
+    padding: 2px;
+    transition: all 0.3s ease;
+
+    &:focus {
+      border-bottom: 1px solid rgb(192, 144, 219);
+    }
+
+    &::placeholder {
+      color: white;
+      font-style: italic;
+      opacity: 0.7;
+      font-size: 1rem;
+    }
+  }
+
+  &__btn {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      filter: drop-shadow(0 0 10px rgb(224, 238, 34));
+    }
+    &:active {
+      transform: translateY(5px);
+    }
+  }
+
+  svg {
+    display: flex;
+    &:hover {
+      .fill__hover {
+        transition: all 0.5s ease;
+        fill: rgb(215, 226, 52);
+      }
+      .fill__icon {
+        transition: all 0.5s ease;
+        fill: rgb(69, 248, 24);
+      }
+      .fill__title {
+        transition: all 0.5s ease;
+        fill: rgb(236, 162, 92);
+      }
+    }
+  }
+}

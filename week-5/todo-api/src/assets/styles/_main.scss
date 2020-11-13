@@ -1,0 +1,39 @@
+@import "./todo";
+@import "./todoindex";
+@import "./todoform";
+@import "./todolist";
+@import "./header";
+@import "./loader";
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Turret+Road:wght@800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Baloo 2", cursive;
+}
+
+html {
+  background-color: #2e4256;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  margin: 0 auto;
+  animation: growUp 2.1s forwards;
+}
+
+@keyframes growUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,41 @@
+.todo__layout {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 6px;
+  background: rgba(46, 66, 86, 0.95);
+  margin-top: 5rem;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: calc(-1 * 4px);
+    left: calc(-1 * 4px);
+    z-index: -1;
+    width: calc(100% + 4px * 2);
+    height: calc(100% + 4px * 2);
+    background: linear-gradient(
+      60deg,
+      hsl(192, 85%, 66%),
+      hsl(199, 69%, 54%),
+      hsl(194, 61%, 36%),
+      hsl(140, 86%, 62%),
+      hsl(283, 58%, 60%),
+      hsl(335, 71%, 64%),
+      hsl(357, 76%, 62%),
+      hsl(0, 87%, 55%)
+    );
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * 4px);
+    animation: moveGradient 3s alternate infinite;
+  }
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}

@@ -1,0 +1,76 @@
+.header {
+  top: 20px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  text-align: center;
+  background: none;
+  height: 4rem;
+  align-items: center;
+  margin: 0 auto;
+  width: 360px;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    display: flex;
+
+    span {
+      padding-left: 1.3rem;
+      font-family: "Turret Road", cursive;
+      font-size: 3rem;
+      color: white;
+      background-image: linear-gradient(45deg, #ece668, #e24c4c);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -moz-background-clip: text;
+      -moz-text-fill-color: transparent;
+    }
+  }
+
+  &__lines {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .stars {
+    display: flex;
+    color: #c59d5f;
+    font-size: 10px;
+    margin: 0 1.2rem;
+    animation: rotate 1s forwards;
+    animation-delay: 0.6s;
+    opacity: 0;
+  }
+
+  .line {
+    width: 350px;
+    height: 0.1rem;
+    background: #f0a5a5;
+    position: relative;
+    opacity: 0;
+    animation: grow 2s forwards;
+    animation-delay: 0.6s;
+  }
+}
+
+@keyframes grow {
+  0% {
+    width: 0;
+  }
+  100% {
+    opacity: 1;
+    width: 350px;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
