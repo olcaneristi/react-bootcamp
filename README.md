@@ -1,12 +1,13 @@
 ## Welcome!
 
-Kodluyoruz React Bootcamp esnasinda egitmenimizin hafta hafta vermis oldugu tum odevleri bu repository altinda birlestirdim.
+Kodluyoruz React Bootcamp esnasinda egitmenimizin tanimladigi odevleri bu repository altinda birlestirdim.
 
 ### Icerik (Her hafta guncellenecek):
 
 - [Hafta 2: Film Listesi](https://github.com/olcaneristi/bootcamp-projects/tree/main/week-2/movielist)
 - [Hafta 3: Tic-Tac-Toe](https://github.com/olcaneristi/bootcamp-projects/tree/main/week-3/tic-tac-toe)
 - [Hafta 4: McKing Burger Siparis Sistemi](https://github.com/olcaneristi/bootcamp-projects/tree/main/week-4/mcking-burger)
+- [Hafta 5: Todo App with Axios](https://github.com/olcaneristi/bootcamp-projects/tree/main/week-5/todo-api)
 
 ### Projeleri nasil calistiririm?
 
