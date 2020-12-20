@@ -8,6 +8,7 @@ Kodluyoruz React Bootcamp esnasinda egitmenimizin tanimladigi odevleri bu reposi
 - [Hafta 3: Tic-Tac-Toe](https://github.com/olcaneristi/bootcamp-projects/tree/main/week-3/tic-tac-toe)
 - [Hafta 4: McKing Burger Siparis Sistemi](https://github.com/olcaneristi/bootcamp-projects/tree/main/week-4/mcking-burger)
 - [Hafta 5: Todo App with Axios](https://github.com/olcaneristi/bootcamp-projects/tree/main/week-5/todo-api)
+- [Hafta 6 (Son): FoodLicious Yemek Tarifleri Sitesi](https://github.com/olcaneristi/bootcamp-projects/tree/main/week-6-7/bitirme-odevi-olcaneristi-main)
 
 ### Projeleri nasil calistiririm?
 
