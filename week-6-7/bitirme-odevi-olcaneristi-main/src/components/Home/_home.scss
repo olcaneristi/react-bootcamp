@@ -1,0 +1,70 @@
+.home {
+  position: relative;
+  min-height: 100vh;
+  background-image: url("../../assets/cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &__container {
+    width: 650px;
+    margin-left: 6rem;
+  }
+
+  &__title {
+    font-size: 2.8rem;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    margin: 3.3rem 0 1.5rem 0;
+
+    span {
+      color: rgb(247, 18, 125);
+    }
+  }
+
+  &__desc {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Questrial", sans-serif;
+    letter-spacing: 0.95px;
+    line-height: 1.3rem;
+    margin: 1.5rem 0;
+  }
+
+  &__cta {
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    padding: 0.9rem 0;
+    background-image: linear-gradient(
+      to right,
+      #f857a6 0%,
+      #ff5858 51%,
+      #f857a6 100%
+    );
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 1px 4px 16px 0px rgba(250, 43, 122, 0.5);
+    border-radius: 10px;
+    display: block;
+
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: white;
+      font-family: "Montserrat", sans-serif;
+      font-size: 1.1rem;
+      padding: 0.9rem 1rem;
+    }
+
+    &:hover {
+      background-position: right center; /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}

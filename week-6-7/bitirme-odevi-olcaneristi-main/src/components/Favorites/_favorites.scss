@@ -1,0 +1,84 @@
+.favorite__list {
+  &__modal {
+    border: none;
+    outline: none;
+    background: #ffc71a;
+    border-radius: 9999px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    transition: background 250ms ease;
+    padding: 5px;
+    margin-right: 1rem;
+
+    &:hover,
+    &:focus {
+      background: #d39b02;
+    }
+
+    svg {
+      font-size: 2rem;
+      color: white;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__title {
+    padding: 1rem 0 0.6rem 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    h2 {
+      font-family: "Questrial", sans-serif;
+      background: white;
+      padding: 0.3rem;
+      width: 60%;
+      font-size: 1.8rem;
+      text-align: center;
+      border-radius: 8px;
+      color: #d02f85a6;
+    }
+  }
+}
+
+.recipe__card__unfav {
+  outline: none;
+  border: none;
+  margin-left: 0.8rem;
+  background: none;
+  font-size: 1.6rem;
+  color: rgb(241, 80, 193);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover path,
+  &:focus {
+    color: rgb(241, 22, 59);
+  }
+}
+
+.modal2 {
+  .ReactModal__Overlay.ReactModal__Overlay--after-open {
+    background: rgba(0, 0, 0, 0.8) !important;
+    z-index: 9999;
+  }
+
+  .ReactModal__Content,
+  .ReactModal__Content--after-open {
+    max-width: 550px;
+    inset: 50px !important;
+    height: 600px;
+    margin: 0 auto;
+    overflow-y: scroll;
+    padding: 0 !important;
+    border-radius: 10px !important;
+    border: 0 !important;
+    background: rgba(255, 255, 255, 0.5) !important;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

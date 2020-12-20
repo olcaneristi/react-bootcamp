@@ -1,0 +1,201 @@
+.add__recipe {
+  &__modal {
+    outline: none;
+    background: rgb(247, 39, 74);
+    border: none;
+    border-radius: 9999px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: white;
+    transition: background 250ms ease;
+    padding: 5px;
+
+    svg {
+      font-size: 2rem;
+      stroke-width: 1.2;
+      color: white;
+      display: flex;
+      align-items: center;
+    }
+
+    &:hover,
+    &:focus {
+      background: rgb(231, 1, 40);
+    }
+  }
+
+  &__logo {
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    padding-bottom: 5px;
+    max-width: 400px;
+
+    &--img {
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      display: flex;
+    }
+  }
+
+  &__banner {
+    height: 100%;
+  }
+
+  &__items {
+    &--title {
+      text-align: center;
+      margin: 4.5rem 0 2rem 0;
+
+      h2 {
+        color: rgb(0, 0, 0);
+        font-family: "Questrial", sans-serif;
+        letter-spacing: 1.2px;
+      }
+    }
+  }
+
+  &__form {
+    form {
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    textarea {
+      height: 55px;
+      margin-bottom: 5px;
+    }
+    &--title,
+    &--desc,
+    &--ing,
+    &--img,
+    &--make,
+    &--category,
+    &--video {
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      width: 280px;
+      height: 30px;
+      outline: none;
+      background: none;
+      resize: none;
+      border: 2px solid rgb(255, 105, 105);
+      border-radius: 6px;
+      margin-bottom: 0.5rem;
+      padding: 0.05rem 0 0 0.2rem;
+
+      &::-webkit-input-placeholder {
+        color: rgba(0, 0, 0, 1);
+        font-style: italic;
+        font-weight: normal;
+      }
+    }
+
+    &--section3 {
+      display: flex;
+      margin: 0.2rem 0 0.6rem 0;
+    }
+
+    &--info1,
+    &--info2,
+    &--info3 {
+      padding: 0 0.7rem;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+
+      p {
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: rgb(7, 0, 0);
+      }
+    }
+
+    &--sec1,
+    &--sec2,
+    &--sec3 {
+      width: 50px;
+      text-align: center;
+      border: 2px solid rgb(255, 105, 105);
+      margin-bottom: 0.5rem;
+      border-radius: 6px;
+      color: rgb(245, 38, 38);
+      font-weight: bold;
+      font-family: "Questrial", sans-serif;
+      font-size: 1rem;
+    }
+  }
+
+  &__cta {
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    &--send {
+      margin: 0.5rem 1rem 0 1rem;
+      border: none;
+      outline: none;
+      background: #f150c1;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      padding: 12px 10px;
+      font-size: 1rem;
+      transition: all 200ms ease;
+      letter-spacing: 1.1px;
+      font-family: "Questrial", sans-serif;
+
+      span {
+        align-items: center;
+        display: flex;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        align-items: center;
+        display: flex;
+      }
+
+      &:hover,
+      &:focus {
+        background: #f1163b;
+      }
+    }
+
+    &--back {
+      background: rgb(81, 163, 240);
+
+      &:hover,
+      &:focus {
+        background: rgb(29, 138, 240);
+      }
+    }
+  }
+}
+
+.modal {
+  .ReactModal__Overlay.ReactModal__Overlay--after-open {
+    background: rgba(0, 0, 0, 0.91) !important;
+    z-index: 9999;
+  }
+
+  .ReactModal__Content,
+  .ReactModal__Content--after-open {
+    max-width: 800px;
+    inset: 35px !important;
+    height: 650px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 !important;
+    border-radius: 16px !important;
+    border: 0 !important;
+    background: rgba(255, 255, 255, 1) !important;
+  }
+}

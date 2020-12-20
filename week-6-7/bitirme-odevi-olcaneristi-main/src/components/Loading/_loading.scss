@@ -1,0 +1,17 @@
+.recipe__loading {
+  height: 85vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  img {
+    width: 250px;
+  }
+}
+
+.main__loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}

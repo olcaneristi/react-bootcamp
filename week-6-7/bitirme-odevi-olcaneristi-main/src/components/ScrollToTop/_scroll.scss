@@ -1,0 +1,33 @@
+.scroll__to__top {
+  position: fixed;
+  bottom: 6.8rem;
+  right: 5%;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgb(245, 37, 64);
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 250ms ease;
+
+  &:hover {
+    background: rgb(202, 6, 32);
+  }
+
+  svg {
+    animation: scrollToTop 1s ease infinite alternate;
+    display: flex;
+    margin: 4px auto 0 auto;
+    font-size: 1.7rem;
+    color: rgb(255, 255, 255);
+  }
+}
+
+@keyframes scrollToTop {
+  from {
+    transform: translateY(1px);
+  }
+  to {
+    transform: translateY(-3px);
+  }
+}

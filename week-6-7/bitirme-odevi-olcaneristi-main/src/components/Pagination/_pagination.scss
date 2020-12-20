@@ -1,0 +1,25 @@
+.pagination {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 2.5rem 0;
+
+  &__nav {
+    &__link {
+      margin: 0 0.3rem;
+      text-decoration: none;
+      color: white;
+      background: #f147be;
+      padding: 0.5rem 0.8rem;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      font-family: "Questrial", sans-serif;
+      transition: background 250ms ease-in-out;
+
+      &:hover,
+      &:focus {
+        background: #e008a0;
+      }
+    }
+  }
+}

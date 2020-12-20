@@ -1,0 +1,100 @@
+.footer {
+  background-color: rgb(199, 197, 197);
+  display: flex;
+  padding: 1.9rem 0;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  font-family: "Nunito", sans-serif;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1200px;
+  }
+
+  &__copyright {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #2b2a2a;
+
+    a {
+      color: rgb(216, 12, 90);
+      text-decoration: none;
+      margin: 0 0.26rem;
+      transition: all 200ms ease;
+      border-bottom: 2px solid transparent;
+
+      &:hover {
+        border-bottom: 2px solid rgb(65, 65, 65);
+        padding-bottom: 1px;
+      }
+    }
+  }
+
+  &__socialmedia {
+    font-size: 2.2rem;
+    display: flex;
+    align-items: center;
+
+    svg {
+      align-items: center;
+      display: flex;
+      color: rgb(177, 30, 42);
+    }
+
+    &__twitter,
+    &__linkedin,
+    &__github {
+      margin: 0 0.3rem;
+
+      &:nth-child(3) {
+        margin-right: 0;
+      }
+
+      .twitter svg {
+        transition: color 250ms ease;
+        &:hover {
+          color: #1da1f2;
+        }
+      }
+      .github svg {
+        transition: color 250ms ease;
+        &:hover {
+          color: #171922;
+        }
+      }
+      .linkedin svg {
+        transition: color 250ms ease;
+        &:hover {
+          color: #0a56a1;
+        }
+      }
+      .github svg,
+      .linkedin svg,
+      .twitter svg {
+        &:hover {
+          filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.3));
+          animation: rotateIn 0.35s linear;
+          animation-iteration-count: 2;
+        }
+      }
+    }
+  }
+}
+
+@keyframes rotateIn {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(15deg);
+  }
+  66% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

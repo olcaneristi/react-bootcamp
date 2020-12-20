@@ -1,0 +1,51 @@
+.features {
+  &__title {
+    color: black;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    font-family: "Questrial", sans-serif;
+    letter-spacing: 1.2px;
+  }
+
+  &__carousel__title {
+    position: absolute;
+    bottom: 0;
+  }
+}
+
+.sc-eCssSg,
+.galrjd .rec .rec-carousel {
+  height: 400px !important;
+}
+
+.ewJlEB {
+  margin-bottom: 4.5rem;
+}
+
+.galrjd {
+  width: 100% !important;
+  margin: 0 auto !important;
+  justify-content: center !important;
+}
+
+.bTybGL {
+  background: rgb(241, 85, 85) !important;
+  color: white !important;
+  border-radius: 20px !important;
+
+  &:hover {
+    background: rgb(226, 38, 38) !important;
+  }
+}
+
+.kyJvRZ:disabled {
+  color: white !important;
+  background: rgb(224, 161, 161) !important;
+}
+
+.cukhLH {
+  width: 50% !important;
+}
