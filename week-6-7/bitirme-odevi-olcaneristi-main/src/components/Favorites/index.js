@@ -8,7 +8,6 @@ import { HiOutlineStar } from "react-icons/hi"
 
 Modal.setAppElement("#root")
 
-
 function Favorites({ recipes, favorite, setFavorite }) {
   const [modalIsOpen, setModalIsOpen] = useState(false)
 
@@ -70,7 +69,7 @@ function Favorites({ recipes, favorite, setFavorite }) {
                 </div>
               </div>
               <h4 className="recipe__card__desc">
-                {recipe.description.length < 100
+                {recipe.description.length < 120
                   ? `${recipe.description}`
                   : `${recipe.description.substring(0, 120)}...`}
               </h4>
