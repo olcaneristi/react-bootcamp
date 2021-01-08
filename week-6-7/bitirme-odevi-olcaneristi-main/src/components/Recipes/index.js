@@ -18,7 +18,7 @@ function Recipes() {
     setLoading(true)
     setTimeout(() => {
       axios
-        .get("https://5fccb170603c0c0016487102.mockapi.io/api/recipes")
+        .get("YOUR_URL_HERE")
         .then((res) => {
           setRecipes(res.data)
           setLoading(false)

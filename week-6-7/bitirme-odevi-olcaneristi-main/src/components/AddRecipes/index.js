@@ -10,7 +10,6 @@ import { MdAdd } from "react-icons/md"
 
 Modal.setAppElement("#root")
 
-
 function AddRecipes({ recipes, setRecipes }) {
   const [modalIsOpen, setModalIsOpen] = useState(false)
 
@@ -40,10 +39,7 @@ function AddRecipes({ recipes, setRecipes }) {
     e.preventDefault()
     setRecipes([...recipes, addRecipe])
     axios
-      .post(
-        "https://5fccb170603c0c0016487102.mockapi.io/api/recipes",
-        addRecipe
-      )
+      .post("YOUR_URL_HERE", addRecipe)
       .then((res) => {
         console.log(res)
       })

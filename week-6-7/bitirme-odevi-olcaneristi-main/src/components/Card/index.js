@@ -27,7 +27,7 @@ function Card({ recipes, setRecipes }) {
 
   const deleteHandler = (id) => {
     axios
-      .delete(`https://5fccb170603c0c0016487102.mockapi.io/api/recipes/${id}`)
+      .delete(`YOUR_URL_HERE/${id}`)
       .then((res) => {
         console.log(res)
         const newRecipes = recipes.filter((item) => {
