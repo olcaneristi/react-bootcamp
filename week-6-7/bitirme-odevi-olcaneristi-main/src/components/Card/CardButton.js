@@ -10,7 +10,7 @@ function CardButton({ recipe, addToFavorite, deleteHandler }) {
 
   const onClick = (e) => {
     addToFavorite(recipe.id)
-    setLikeButton(likeButton + 1)
+    setLikeButton((prevCount) => prevCount + 1)
   }
   return (
     <div className="recipe__card__buttons">
