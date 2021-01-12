@@ -17,13 +17,11 @@ function Card({ recipes, setRecipes }) {
     console.log(id)
   }
 
-  let filtered = recipes.filter((recipe) => {
-    if (searchTerm === "") {
-      return recipe
-    } else if (recipe.title.toLowerCase().includes(searchTerm.toLowerCase())) {
-      return recipe
-    }
-  })
+   let filtered = !searchTerm
+    ? recipes
+    : recipes.filter((recipe) =>
+        recipe.title.toLowerCase().includes(searchTerm.toLowerCase())
+      )
 
   const deleteHandler = (id) => {
     axios
