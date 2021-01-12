@@ -37,10 +37,11 @@ function AddRecipes({ recipes, setRecipes }) {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    setRecipes([...recipes, addRecipe])
     axios
       .post("YOUR_URL_HERE", addRecipe)
       .then((res) => {
+        setRecipes([...recipes, addRecipe])
+      
         console.log(res)
       })
       .catch((err) => {
